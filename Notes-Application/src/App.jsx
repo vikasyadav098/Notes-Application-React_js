@@ -17,6 +17,7 @@ const [task, setTask] = useState([])
     setDetails("");
   };
 
+  
   return (
     <div className="h-screen lg:flex bg-black text-white">
       <form
@@ -34,6 +35,7 @@ const [task, setTask] = useState([])
           onChange={(e) => 
             setTitle(e.target.value)
           }
+          
         />
         <textarea
           type="text"
@@ -43,6 +45,7 @@ const [task, setTask] = useState([])
           onChange={(e)=>{
             setDetails(e.target.value)
           }
+            
           }
         />
         
