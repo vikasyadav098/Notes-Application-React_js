@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { X } from 'lucide-react';
+
 const App = () => {
   const [title, setTitle] = useState("");
 
@@ -16,6 +16,7 @@ const [task, setTask] = useState([])
     setTitle("");
     setDetails("");
   };
+
 
   return (
     <div className="h-screen lg:flex bg-black text-white">
@@ -34,6 +35,7 @@ const [task, setTask] = useState([])
           onChange={(e) => 
             setTitle(e.target.value)
           }
+        
         />
         <textarea
           type="text"
@@ -42,7 +44,7 @@ const [task, setTask] = useState([])
           value={details}
           onChange={(e)=>{
             setDetails(e.target.value)
-          }
+          } 
           }
         />
         
@@ -60,7 +62,7 @@ const [task, setTask] = useState([])
       {task.map(function(elem,idx){
 
         return <div key={idx} className="relative h-75 w-52 bg-cover rounded-2xl py-8 px-4 bg-[url('https://i.pinimg.com/736x/81/ae/49/81ae49f28c812a79dd8bcd847419300c.jpg')] text-black">
-          <h2 className="absolute top-5 right-5 bg-red-500 p-1 text-xs rounded-full"><X /></h2>
+          <h2 className="absolute top-5 right-5 bg-red-500 p-1 text-xs rounded-full"></h2>
           <h3 className="leading-tight text-xl font-bold">{elem.title}</h3>
           <p className="text-sm mt-2 leading-tight font-medium text-gray-500">
             {elem.details}</p>
