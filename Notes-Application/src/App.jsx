@@ -58,7 +58,7 @@ const [task, setTask] = useState([])
       <div className="  lg:w-1/2 p-10 lg:border-l-2">
         <h1 className="text-3xl font-bold">Recent Notes</h1>
         <div className="flex flex-wrap justify-start items-start mt-5 gap-3 h-full overflow-auto">
-         //tasks
+         
       {task.map(function(elem,idx){
 
         return <div key={idx} className="relative h-75 w-52 bg-cover rounded-2xl py-8 px-4 bg-[url('https://i.pinimg.com/736x/81/ae/49/81ae49f28c812a79dd8bcd847419300c.jpg')] text-black">
